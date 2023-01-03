@@ -57,11 +57,11 @@ const technologies = [
 const projects = [
   {
     name: "Real Music",
-    image: "./assets/fiber.png",
+    image: "./assets/Real-Music.png",
     github: "https://github.com/oficial-rilwan/Real-Music-Frontend",
     link: "https://realmusicapp.netlify.app",
     description:
-      "A platform for automating data collection and reporting throughout teams, operations and supply chains.",
+      "Real Music is a digital music service that gives you access to millions of songs and other content from creators all over the world.",
     technologies: [
       {
         name: "Typescript",
@@ -93,9 +93,9 @@ const projects = [
     name: "Real Expense Tracker",
     link: "https://realexpensetracker.netlify.app",
     github: "https://github.com/oficial-rilwan/Real-Expense-Tracker",
-    image: "./assets/fiber.png",
+    image: "./assets/Real-Expense.png",
     description:
-      "A platform for automating data collection and reporting throughout teams, operations and supply chains.",
+      "Real Expense Tracker is an incredibly useful and practical financial tool. The main purpose of the app, is to identify where you are spending your money, and from there, you can identify ways or opportunities to save or invest more of your money and reduce your cost of living.",
     technologies: [
       {
         name: "Typescript",
@@ -124,8 +124,7 @@ const projects = [
     image: "./assets/fiber.png",
     link: "https://fiber-lpage.netlify.app",
     github: "https://github.com/oficial-rilwan/FiberWebsite",
-    description:
-      "A platform for automating data collection and reporting throughout teams, operations and supply chains.",
+    description: "A simple landing page",
     technologies: [
       {
         name: "HTML",
@@ -180,6 +179,7 @@ projects.forEach((project) => {
   const div_actions = document.createElement("div");
   const div_actions_btn = document.createElement("button");
   const div_actions_link = document.createElement("a");
+  div_actions_link.target = "_blank";
 
   div_actions_btn.textContent = "Preview";
   div_actions_link.href = project.link;
