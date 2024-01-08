@@ -172,7 +172,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
-  padding: 5rem;
+  padding: 5rem 0;
   border-bottom: 1px solid #ccc;
 }
 .project img {

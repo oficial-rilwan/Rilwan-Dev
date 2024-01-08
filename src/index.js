@@ -56,6 +56,70 @@ const technologies = [
 ];
 const projects = [
   {
+    name: "Jureb",
+    image: "./assets/Jureb.png",
+    link: "https://jureb.com",
+    description:
+      "JUREB is a high-tech software that provides a birds eye view to allow unlimited growth and expansion for all businesses from nano to medium enterprises. The JUREB system has the capability to transform your current bookkeeping and human resource paper trails into a digitalized dashboard developed to simplify the complex operations necessary for overall business growth.",
+    technologies: [
+      {
+        name: "Typescript",
+        image: "./assets/ts.svg",
+      },
+      {
+        name: "React JS",
+        image: "./assets/react.jpg",
+      },
+      {
+        name: "NodeJS",
+        image: "./assets/node.svg",
+      },
+      {
+        name: "Express",
+        image: "./assets/express.svg",
+      },
+      {
+        name: "Mongo DB",
+        image: "./assets/mongodb.svg",
+      },
+      {
+        name: "Firebase",
+        image: "./assets/firebase.svg",
+      },
+    ],
+  },
+  {
+    name: "GetTiket",
+    image: "./assets/gettiket.png",
+    link: "https://gettiket.com",
+    description:
+      "GetTiket is a leading global ticketing platform for event organizers. Seamlessly manage and sell tickets worldwide in over 50+ countries and accept payments anywhere. Create various ticket types and reach a global audience with ease.",
+    technologies: [
+      {
+        name: "Typescript",
+        image: "./assets/ts.svg",
+      },
+      {
+        name: "React JS",
+        image: "./assets/react.jpg",
+      },
+      {
+        name: "NodeJS",
+        image: "./assets/node.svg",
+      },
+      {
+        name: "Express",
+        image: "./assets/express.svg",
+      },
+      {
+        name: "My SQL",
+      },
+      {
+        name: "Sequelize ORM",
+      },
+    ],
+  },
+  {
     name: "Real Music",
     image: "./assets/Real-Music.png",
     github: "https://github.com/oficial-rilwan/Real-Music-Frontend",
@@ -89,36 +153,36 @@ const projects = [
       },
     ],
   },
-  {
-    name: "Real Expense Tracker",
-    link: "https://realexpensetracker.netlify.app",
-    github: "https://github.com/oficial-rilwan/Real-Expense-Tracker",
-    image: "./assets/Real-Expense.png",
-    description:
-      "Real Expense Tracker is an incredibly useful and practical financial tool. The main purpose of the app, is to identify where you are spending your money, and from there, you can identify ways or opportunities to save or invest more of your money and reduce your cost of living.",
-    technologies: [
-      {
-        name: "Typescript",
-        image: "./assets/ts.svg",
-      },
-      {
-        name: "React JS",
-        image: "./assets/react.jpg",
-      },
-      {
-        name: "NodeJS",
-        image: "./assets/node.svg",
-      },
-      {
-        name: "Express",
-        image: "./assets/express.svg",
-      },
-      {
-        name: "Mongo DB",
-        image: "./assets/mongodb.svg",
-      },
-    ],
-  },
+  // {
+  //   name: "Real Expense Tracker",
+  //   link: "https://realexpensetracker.netlify.app",
+  //   github: "https://github.com/oficial-rilwan/Real-Expense-Tracker",
+  //   image: "./assets/Real-Expense.png",
+  //   description:
+  //     "Real Expense Tracker is an incredibly useful and practical financial tool. The main purpose of the app, is to identify where you are spending your money, and from there, you can identify ways or opportunities to save or invest more of your money and reduce your cost of living.",
+  //   technologies: [
+  //     {
+  //       name: "Typescript",
+  //       image: "./assets/ts.svg",
+  //     },
+  //     {
+  //       name: "React JS",
+  //       image: "./assets/react.jpg",
+  //     },
+  //     {
+  //       name: "NodeJS",
+  //       image: "./assets/node.svg",
+  //     },
+  //     {
+  //       name: "Express",
+  //       image: "./assets/express.svg",
+  //     },
+  //     {
+  //       name: "Mongo DB",
+  //       image: "./assets/mongodb.svg",
+  //     },
+  //   ],
+  // },
   {
     name: "Fiber Landing Page",
     image: "./assets/fiber.png",
@@ -172,26 +236,26 @@ projects.forEach((project) => {
 
   div_content_h4.textContent = project.name;
   div_content_p.textContent = project.description;
-  div_content_small.textContent = "Design By: ";
-  div_content_small_span.textContent = "Rilwan Aribidesi";
-  div_content_small.appendChild(div_content_small_span);
+  // div_content_small.textContent = "Design By: ";
+  // div_content_small_span.textContent = "Rilwan Aribidesi";
+  // div_content_small.appendChild(div_content_small_span);
 
   const div_actions = document.createElement("div");
-  const div_actions_btn = document.createElement("button");
+  // const div_actions_btn = document.createElement("button");
   const div_actions_link = document.createElement("a");
   div_actions_link.target = "_blank";
 
-  div_actions_btn.textContent = "Preview";
+  // div_actions_btn.textContent = "Preview";
   div_actions_link.href = project.link;
   div_actions_link.textContent = "View Site";
 
   div_actions.classList.add("actions");
-  div_actions.appendChild(div_actions_btn);
+  // div_actions.appendChild(div_actions_btn);
   div_actions.appendChild(div_actions_link);
 
   div_content.appendChild(div_content_h4);
   div_content.appendChild(div_content_p);
-  div_content.appendChild(div_content_small);
+  // div_content.appendChild(div_content_small);
   div_content.appendChild(div_actions);
 
   div_project.appendChild(div_img_wrapper);
